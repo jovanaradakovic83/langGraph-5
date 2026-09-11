@@ -19,7 +19,7 @@ Write ~6 realistic TypeScript source files that simulate an existing production 
 ---
 
 ## Phase 3 — RAG Layer
-**Branch:** TBD
+**Branch:** `feature/3-rag-implementation`
 
 Implement `rag/indexer.py` — walks the `nextjs-app/src` tree, splits TypeScript files by export boundaries, embeds each chunk with `sentence-transformers/all-MiniLM-L6-v2`, and persists to a local ChromaDB collection. Implement `rag/retriever.py` — a clean query interface that accepts a search string and returns the top-k most relevant code snippets with file path metadata. Verify with a manual query before moving on.
 

@@ -121,6 +121,20 @@ This runs one coding → review iteration with the JWT middleware feature reques
 
 ---
 
+## Testing the Graph Router
+
+To verify the conditional routing logic (Node 4 — PR Gatekeeper) without making any LLM calls:
+
+```bash
+cd pipeline
+source venv/bin/activate
+python3 test_graph.py
+```
+
+Tests 5 scenarios: fail below cap (loops back), pass (exits), fail at cap (forced through), and graph node structure check.
+
+---
+
 ## Implementation Plan
 
 For a per-phase breakdown of what was built and on which branch, see [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md).
@@ -135,5 +149,5 @@ For a per-phase breakdown of what was built and on which branch, see [IMPLEMENTA
 | 2 | Next.js sample codebase (~6 files) | ✅ Done |
 | 3 | RAG layer: indexer.py + retriever.py | ✅ Done |
 | 4 | Nodes: context_retrieval, coding_agent, qa_reviewer, pr_publisher | ✅ Done |
-| 5 | Graph assembly: graph.py with conditional router | ⬜ Pending |
+| 5 | Graph assembly: graph.py with conditional router | ✅ Done |
 | 6 | main.py + end-to-end test run | ⬜ Pending |

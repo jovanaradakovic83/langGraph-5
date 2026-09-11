@@ -39,7 +39,7 @@ Also writes the two prompt files in `prompts/`.
 ---
 
 ## Phase 5 — Graph Assembly
-**Branch:** TBD
+**Branch:** `feature/graph-assembly`
 
 Wire all nodes into a `StateGraph` in `graph.py`. Add the conditional edge (Node 4 — PR Gatekeeper): routes back to the Coding Agent on `fail` while `iteration_count < max_iterations`, otherwise forwards to the PR Publisher. Compile the graph.
 

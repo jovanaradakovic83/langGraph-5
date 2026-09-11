@@ -105,12 +105,18 @@ python3 main.py
 
 ---
 
+## Implementation Plan
+
+For a per-phase breakdown of what was built and on which branch, see [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md).
+
+---
+
 ## Build Progress
 
 | Phase | Description | Status |
 |---|---|---|
 | 1 | Scaffold: folders, requirements.txt, state.py | ✅ Done |
-| 2 | Next.js sample codebase (~6 files) | ⬜ Pending |
+| 2 | Next.js sample codebase (~6 files) | ✅ Done |
 | 3 | RAG layer: indexer.py + retriever.py | ⬜ Pending |
 | 4 | Nodes: context_retrieval, coding_agent, qa_reviewer, pr_publisher | ⬜ Pending |
 | 5 | Graph assembly: graph.py with conditional router | ⬜ Pending |

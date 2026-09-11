@@ -46,6 +46,6 @@ Wire all nodes into a `StateGraph` in `graph.py`. Add the conditional edge (Node
 ---
 
 ## Phase 6 — End-to-End Test
-**Branch:** TBD
+**Branch:** `feature/end-to-end`
 
 Implement `main.py` CLI entry point. Run the full pipeline with the JWT middleware feature request. Observe the coding → review loop, verify the conditional router fires correctly, and inspect the generated PR description in `output/`.

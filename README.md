@@ -117,7 +117,7 @@ For a per-phase breakdown of what was built and on which branch, see [IMPLEMENTA
 |---|---|---|
 | 1 | Scaffold: folders, requirements.txt, state.py | ✅ Done |
 | 2 | Next.js sample codebase (~6 files) | ✅ Done |
-| 3 | RAG layer: indexer.py + retriever.py | ⬜ Pending |
+| 3 | RAG layer: indexer.py + retriever.py | ✅ Done |
 | 4 | Nodes: context_retrieval, coding_agent, qa_reviewer, pr_publisher | ⬜ Pending |
 | 5 | Graph assembly: graph.py with conditional router | ⬜ Pending |
 | 6 | main.py + end-to-end test run | ⬜ Pending |

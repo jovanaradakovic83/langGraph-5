@@ -1,0 +1,20 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+
+# ChromaDB index (rebuilt by running rag/indexer.py)
+rag/chroma_db/
+
+# Generated PR descriptions
+output/
+
+# Environment variables
+.env
+.env.local
+
+# HuggingFace model cache (if downloaded locally)
+.cache/

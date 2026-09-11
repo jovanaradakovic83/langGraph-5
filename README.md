@@ -105,6 +105,22 @@ python3 main.py
 
 ---
 
+## Testing Nodes in Isolation
+
+Before running the full pipeline, you can verify each node works correctly with a single-pass test (Node 1 → Node 2 → Node 3, no loop):
+
+```bash
+cd pipeline
+source venv/bin/activate
+python3 test_nodes.py
+```
+
+This runs one coding → review iteration with the JWT middleware feature request and prints the output of each node. The ChromaDB index must exist first — run `python3 -m rag.indexer` if you haven't already.
+
+> The `rag/chroma_db/` directory and `__pycache__/` folders are regenerated automatically and are gitignored — no need to commit them.
+
+---
+
 ## Implementation Plan
 
 For a per-phase breakdown of what was built and on which branch, see [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md).
@@ -118,6 +134,6 @@ For a per-phase breakdown of what was built and on which branch, see [IMPLEMENTA
 | 1 | Scaffold: folders, requirements.txt, state.py | ✅ Done |
 | 2 | Next.js sample codebase (~6 files) | ✅ Done |
 | 3 | RAG layer: indexer.py + retriever.py | ✅ Done |
-| 4 | Nodes: context_retrieval, coding_agent, qa_reviewer, pr_publisher | ⬜ Pending |
+| 4 | Nodes: context_retrieval, coding_agent, qa_reviewer, pr_publisher | ✅ Done |
 | 5 | Graph assembly: graph.py with conditional router | ⬜ Pending |
 | 6 | main.py + end-to-end test run | ⬜ Pending |

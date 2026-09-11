@@ -26,7 +26,7 @@ Implement `rag/indexer.py` — walks the `nextjs-app/src` tree, splits TypeScrip
 ---
 
 ## Phase 4 — Nodes
-**Branch:** TBD
+**Branch:** `feature/4-nodes`
 
 Implement all four LangGraph node functions:
 - **Node 1** (`context_retrieval.py`) — calls the LLM to generate search queries from the issue, runs them through the retriever, assembles a formatted context block.

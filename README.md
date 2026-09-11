@@ -103,6 +103,8 @@ python3 main.py
 
 > **Note:** Always activate the virtual environment (`source venv/bin/activate`) before running any commands in a new terminal session.
 
+> **Important:** The ChromaDB index (`rag/chroma_db/`) is gitignored and not committed. You must run `python3 -m rag.indexer` to build it before running the pipeline or `test_nodes.py`. Re-run the indexer any time you switch to a fresh branch or clone the repo.
+
 ---
 
 ## Testing Nodes in Isolation
@@ -150,4 +152,4 @@ For a per-phase breakdown of what was built and on which branch, see [IMPLEMENTA
 | 3 | RAG layer: indexer.py + retriever.py | ✅ Done |
 | 4 | Nodes: context_retrieval, coding_agent, qa_reviewer, pr_publisher | ✅ Done |
 | 5 | Graph assembly: graph.py with conditional router | ✅ Done |
-| 6 | main.py + end-to-end test run | ⬜ Pending |
+| 6 | main.py + end-to-end test run | ✅ Done |
